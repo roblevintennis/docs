@@ -103,7 +103,7 @@ export default function createIntegration() {
 
 #### Start
 
-Some hosts expect you to *start* the server yourselves, for example by listening to a port. For these types of hosts, the adapter API allows you to export a `start` function which will be called when the bundle script is ran.
+Some hosts expect you to *start* the server yourselves, for example by listening to a port. For these types of hosts, the adapter API allows you to export a `start` function which will be called when the bundle script is run.
 
 ```js
 import { App } from 'astro/app';
