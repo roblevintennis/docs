@@ -66,7 +66,7 @@ export function handler(event, context) {
 }
 ```
 
-With the adapter API you achieve these by implementing `createExports` in your `serverEntrypoint`:
+With the adapter API you achieve this by implementing `createExports` in your `serverEntrypoint`:
 
 ```js
 import { App } from 'astro/app';
