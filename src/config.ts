@@ -53,6 +53,7 @@ export const SIDEBAR = {
 		{ text: 'Runtime API', link: 'en/reference/api-reference' },
 		// CONVERT: Astro Integration API
 		{ text: 'Integrations API', link: 'en/reference/integrations-reference' },
+		{ text: 'Adapter API (experimental)', link: 'en/reference/adapter-reference' },
 		{ text: 'Routing Rules', link: 'en/core-concepts/routing' },
 		// ADD: Astro Component Syntax
 		// ADD: Markdown Syntax
