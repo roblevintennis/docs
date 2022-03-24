@@ -54,7 +54,7 @@ The properties are:
 
 ### Server Entrypoint
 
-Astro's adapter API attempts to work with any type of host, and gives a flexible way to confirm to the host APIs.
+Astro's adapter API attempts to work with any type of host, and gives a flexible way to conform to the host APIs.
 
 #### Exports
 
@@ -138,6 +138,14 @@ export function start(manifest) {
 
 The following methods are provided:
 
+##### app.render(request)
+
+This method calls the Astro page that matches the request, renders it, and returns a Promise to a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response) object. This also works for API routes, that do not render pages.
+
+```js
+const response = await app.render(request);
+```
+
 ##### app.match(request)
 
 This method is used to determine if a request is matched by the Astro app's routing rules.
@@ -149,11 +157,3 @@ if(app.match(request)) {
 ```
 
 You can usually call `app.render(request)` without using `.match` because Astro handles 404s if you provide a `404.astro` file. Use `app.match(request)` if you want to handle 404s in a different way.
-
-##### app.render(request)
-
-This method calls the Astro page that matches the request, renders it, and returns a Promise to a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response) object. This also works for API routes, that do not render pages.
-
-```js
-const response = await app.render(request);
-```
