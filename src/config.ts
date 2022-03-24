@@ -42,6 +42,7 @@ export const SIDEBAR = {
 		//          Similar to Tailwind? https://tailwindcss.com/docs/installation
 		{ text: 'Manual Setup', link: 'en/guides/manual-setup' },
 		{ text: 'UI Frameworks', link: 'en/core-concepts/framework-components' },
+		{ text: 'Server-side Rendering (experimental)', link: 'en/guides/server-side-rendering' },
 		
 		{ text: 'Reference', header: true, type: 'api' },
 		{
