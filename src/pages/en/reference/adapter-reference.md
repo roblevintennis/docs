@@ -140,7 +140,7 @@ The following methods are provided:
 
 ##### app.match(request)
 
-This method is used to determine a request is matched by the Astro app's routing rules.
+This method is used to determine if a request is matched by the Astro app's routing rules.
 
 ```js
 if(app.match(request)) {
