@@ -82,7 +82,7 @@ export function createExports(manifest) {
 }
 ```
 
-And then in your integration, where you call `setAdapter` provide this name in `exports`:
+And then in your integration, where you call `setAdapter`, provide this name in `exports`:
 
 ```diff
 export default function createIntegration() {
