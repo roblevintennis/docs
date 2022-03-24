@@ -16,7 +16,7 @@ An adapter is a special kind of [integrations](./integrations-reference/) that p
 
 ## Building an Adapter
 
-An adapter is an [integration](./integrations-reference/) and can do anything that an integration can do.
+An adapter is an [integration](/en/reference/integrations-reference/) and can do anything that an integration can do.
 
 An adapter __must__ call the `setAdapter` API in the `astro:config:done` hook like so:
 
