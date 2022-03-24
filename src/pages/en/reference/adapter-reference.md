@@ -9,7 +9,7 @@ Astro is designed to make it easy to deploy to any cloud provider for SSR (serve
 
 ## What is an adapter
 
-An adapter is a special kind of [integrations](./integrations-reference/) that provide an entrypoint for server-side rendering. An adapter does two things:
+An adapter is a special kind of [integration](/en/reference/integrations-reference/) that provides an entrypoint for server-side rendering. An adapter does two things:
 
 - Implements host-specific APIs for handling requests.
 - Configures the build according to host conventions.
