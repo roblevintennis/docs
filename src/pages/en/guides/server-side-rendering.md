@@ -29,19 +29,12 @@ Once your packages have been installed, add two new lines to your `astro.config.
 ```diff
   // astro.config.mjs
   import { defineConfig } from 'astro/config';
-+ import { netlifyFunctions } from '@astrojs/netlify';
++ import netlify from '@astrojs/netlify';
 
   export default defineConfig({
-+   adapter: netlifyFunctions(),
++   adapter: netlify(),
   });
 ``` 
-
-Create a `netlify.toml` if you do not already have one:
-
-```toml
-[functions]
-  directory = "dist/functions"
-```
 
 With Netlify you can deploy from git, their web UI, or from the cli. Here we'll use the [Netlify CLI](https://docs.netlify.com/cli/get-started/) to deploy.
 
@@ -51,7 +44,7 @@ First build your site as normal:
 npm run build
 ```
 
-This creates `dist/functions/` that we referenced in the `netlify.toml` file. Deploying your site will deploy this function which contains all of your Astro pages ready to be rendered.
+This creates `netlify/functions/` which contains your SSR code. Deploying your site will deploy this function which contains all of your Astro pages ready to be rendered.
 
 ```bash
 netlify deploy
