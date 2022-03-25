@@ -29,7 +29,7 @@ Once your packages have been installed, add two new lines to your `astro.config.
 ```diff
   // astro.config.mjs
   import { defineConfig } from 'astro/config';
-+ import netlify from '@astrojs/netlify';
++ import netlify from '@astrojs/netlify/functions';
 
   export default defineConfig({
 +   adapter: netlify(),
